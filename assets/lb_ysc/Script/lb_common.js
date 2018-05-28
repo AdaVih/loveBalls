@@ -36,22 +36,6 @@ module.exports = {
     userDate:{
         starTotal:0,//星星总计
         levels:[],
-    },
-    getUserDate:function(){//获取用户数据
-        // var data = JSON.parse(window.localStorage.getItem('userdate'));
-        // if(data == null){//如果为空返回默认数据，并保存
-        //     this.userDate.levels = this.levels;
-        //     data = this.userDate;
-        //     this.setUserDate(data);
-        // }
-        this.userDate.levels = this.levels;
-        var data = this.userDate;
-        return data;
-    },
-    setUserDate:function(data){//保存用户数据
-        this.userDate = data;
-        
-        //window.localStorage.setItem('userdate',JSON.stringify(date));
     }
     
     

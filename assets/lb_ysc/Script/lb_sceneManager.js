@@ -19,7 +19,7 @@ cc.Class({
         common.sm = this;
         this.isGameTb = false;//是否从游戏进入
         cc.game.addPersistRootNode(this.node);
-        this.ud = common.getUserDate();
+        this.ud = this.getUserDate();
         console.log(this.ud);
     },
     loadLevel(index){
@@ -32,5 +32,46 @@ cc.Class({
     },
     // update (dt) {},
     
+    getUserDate:function(){//获取用户数据
+        
+        
+
+
+        if (cc.sys.platform === cc.sys.WECHAT_GAME) {
+            try {
+                var data = JSON.parse(wx.getStorageSync('lb_userdate'));
+            } catch (e) {
+                console.log("用户数据获取出错!");    
+            }
+        }else{
+            var data = JSON.parse(window.localStorage.getItem('lb_userdate'));
+        }
+        if(data == null){//如果为空返回默认数据，并保存
+            data = common.userDate;
+            data.levels = common.levels;
+            this.setUserDate(data);
+        }
+        var l = data.levels.length;
+        var i = common.levels.length - l;
+        if(i>0){
+            for(var k=0; k<i; k++){
+                data.levels.push(common.levels[l+k]);
+            }
+        }
+        console.log(data);
+        return data;
+    },
+    setUserDate:function(data){//保存用户数据
+        if (cc.sys.platform === cc.sys.WECHAT_GAME) {
+            try {
+                wx.setStorageSync('lb_userdate', JSON.stringify(data));
+            } catch (e) {
+                console.log("用户数据保存出错!");    
+            }
+        }else{
+            window.localStorage.setItem('lb_userdate',JSON.stringify(data));
+        }
+        
+    }
     
 });

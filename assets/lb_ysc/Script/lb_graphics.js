@@ -68,16 +68,25 @@ cc.Class({
         
     },
 
-    // update (dt) {
+    update (dt) {
+        if(this.pen_speed > 0){
         
-    // },
+            this.pen_speed--;
+            if(this.pen_speed < 0){
+                this.pen_speed = 0;
+            }
+            if(this.penState)
+            this.penState.speed = this.pen_speed;
+        }
+    },
     init(){
         this.drawLenght = 0;
 
         this.is_scor_star1 = true;
         this.is_scor_star2 = true;
         this.is_scor_star3 = true;
-
+        //画笔速度
+        this.pen_speed = 0;
         //分数
         this.score = this.score_text.getComponent(cc.Label);
         this.score_val = parseInt(this.score.string);
@@ -99,7 +108,6 @@ cc.Class({
         },this);
         this.Canvas.on(cc.Node.EventType.TOUCH_CANCEL,function(event){
             this.pen.active = false;
-            
             this.touchEnd();
         },this);
 
@@ -169,7 +177,9 @@ cc.Class({
             this.pen.x = this.startPos.x;
             this.pen.y = this.startPos.y;
             this.pen.active = true;
-            this.penState = this.pen.getComponent(cc.Animation).play();
+            common.gm.gameTip.active = false;
+            this.pen.getComponent(cc.Animation).stop();
+            this.penState = this.pen.getComponent(cc.Animation).play("lb_penAnim");
             this.points = [];
             //临时点数组
             this.curpoint = [];
@@ -197,7 +207,11 @@ cc.Class({
             
             
             var d = Math.sqrt((p1.x-p2.x)*(p1.x-p2.x) + (p1.y-p2.y)*(p1.y-p2.y));
-            this.penState.speed = d;
+            if(this.pen_speed<2){
+                this.pen_speed+=2;
+            }
+            
+            
             this.drawLenght += d;
             this.score_val = parseInt((1-(this.drawLenght/this.maxLenght))*100);
             if(this.score_val <= 0){

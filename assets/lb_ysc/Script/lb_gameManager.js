@@ -147,7 +147,7 @@ cc.Class({
         common.sm.ud.levels[i].pass = true;
         common.sm.ud.levels[i].active = true;
 
-        common.setUserDate(common.sm.ud);
+        common.sm.setUserDate(common.sm.ud);
     },
     //失败
     lose(){
@@ -191,17 +191,42 @@ cc.Class({
         var level = this.node.getChildByName('environment').getChildByName('level');
         //.可以把this.node从(0,0)到(width, height)截取到模拟器目录%CocosCreator%\resources\cocos2d-x\simulator\win32下的1.png。你要截全屏的话把这段代码挂在场景根节点下就可以了。
         //.RenderTexture扩展的是cc.Node，你也可以setPosition去截屏幕的不同部分。
-        var render = new cc.RenderTexture(cc.winSize.width, cc.winSize.height);
-        console.log("ScreenShot1"+cc.winSize.width, cc.winSize.height);
+        var render = new cc.RenderTexture.create(cc.director.getVisibleSize().width, cc.director.getVisibleSize().height);
+        level._sgNode.addChild(render);
+        render.setVisible(false);
         render.begin();
         level._sgNode.visit();
         render.end();
         // 获取SpriteFrame
         var nowFrame = render.getSprite().getSpriteFrame();
-        // render.saveToFile("screenShot01.png",cc.ImageFormat.PNG, true, function () {
+        // render.saveToFile("screenShot"+this.level+".png",cc.ImageFormat.PNG, true, function () {
+        //     render.removeFromParent();
         //     cc.log("capture screen successfully!");
         // });
+        //打印截图路径
+        // cc.log(jsb.fileUtils.getWritablePath());
+        console.log(render);
+        this.saveImgToWx();
         return nowFrame;
+    },
+
+    //把图保存到微信画册
+    saveImgToWx(render){
+        if(cc.sys.platform == cc.sys.WECHAT_GAME){
+            const ctx = wx.createCanvasContext('myCanvas');
+            const data = render.sprite._texture._image;
+            wx.canvasPutImageData({
+            canvasId: 'myCanvas',
+            x: 0,
+            y: 0,
+            width: cc.winSize.height,
+            height: cc.winSize.height,
+            data: data,
+            success(res) {
+                console.log(res);
+            }
+            })
+        }
     },
     ScreenShot2(){
         console.log("========开始截屏============")
@@ -237,6 +262,36 @@ cc.Class({
         // wx.shareAppMessage({
         //     imageUrl: tempFilePath
         // })
+    },
+
+    screenShoot(func){
+        if (!cc.sys.isNative) return;
+        let dirpath = jsb.fileUtils.getWritablePath() + 'ScreenShoot/';
+        if( !jsb.fileUtils.isDirectoryExist(dirpath)){
+            jsb.fileUtils.createDirectory(dirpath);
+        }
+        let name = 'ScreenShoot-' + (new Date()).valueOf() + '.png';
+        let filepath = dirpath + name;
+        let size = cc.director.getVisibleSize();
+        let rt = cc.RenderTexture.create(size.width, size.height);
+        console.log("========开始截屏============");
+        let level = this.node.getChildByName('environment').getChildByName('level');
+        level._sgNode.addChild(rt);
+        rt.setVisible(false);
+        rt.begin();
+        level._sgNode.visit();
+        rt.end();
+        rt.saveToFile('ScreenShoot/' + name, cc.IMAGE_FORMAT_PNG, true, function() {
+            cc.log('save succ');
+            rt.removeFromParent();
+            if (func) {
+                func(filepath);
+            }
+        });
+        // 获取SpriteFrame
+        console.log(filepath);
+        var nowFrame = rt.getSprite().getSpriteFrame();
+        return nowFrame;
     },
 
 
