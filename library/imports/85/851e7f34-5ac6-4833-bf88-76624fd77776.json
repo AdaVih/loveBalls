@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Img_StarOff",
+    "texture": "e5bb70de-fb0a-4a49-9f2e-02923baef45d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      399,
+      14
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      399,
+      14
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+var common = require('lb_ysc_common');
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        laya:{
+            default:null,
+            type:cc.Node
+        },
+        audio_enter: {
+            url: cc.AudioClip,
+            default: null
+        },
+
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    onLoad () {
+        
+
+    },
+
+    start () {
+        if(common.sm){
+            if(common.sm.playAudioId != null){
+                cc.audioEngine.stop(common.sm.playAudioId);
+            }
+        }
+        
+        
+        var laya_box = this.node.getChildByName('laya');
+        var OpenAnimation = laya_box.getComponent(cc.Animation);
+
+        var start_box = this.node.getChildByName('start-btn').getChildByName("Label");
+        var startAnimation = start_box.getComponent(cc.Animation);
+
+        var top_box = this.node.getChildByName('top');
+        var topAnimation = top_box.getComponent(cc.Animation);
+
+        var share_box = this.node.getChildByName('share-btn');
+        var shareAnimation = share_box.getComponent(cc.Animation);
+        
+        cc.audioEngine.playEffect(this.audio_enter, false);
+        OpenAnimation.play('lb_ysc_one');
+        OpenAnimation.on('finished',function () {
+            
+            topAnimation.play('lb_ysc_top');
+            start_box.active = share_box.active =  true;
+            startAnimation.play('lb_ysc_fade');
+            shareAnimation.play('lb_ysc_fade2');
+            common.sm.playAudioId = cc.audioEngine.playEffect(common.sm.audio_bg, true);
+            if(common.gm == null){
+                common.sm.onLaunch();
+            }
+            
+
+        })
+    },
+
+    toSelect(){
+        cc.director.loadScene('lb_ysc_select');
+    },
+    share(){
+        common.sm.shareGame();
+    }
+
+    // update (dt) {},
+});

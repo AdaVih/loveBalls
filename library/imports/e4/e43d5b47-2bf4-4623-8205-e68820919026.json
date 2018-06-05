@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Btn_musicon",
+    "texture": "2a9e46a3-cf87-42c0-84f0-775cb83fdfe4",
+    "atlas": "",
+    "rect": [
+      2,
+      3,
+      141,
+      155
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      145,
+      160
+    ]
+  }
+}

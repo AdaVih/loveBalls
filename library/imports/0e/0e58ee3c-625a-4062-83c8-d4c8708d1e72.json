@@ -1,0 +1,34 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "lb_ysc_top",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.3333333333333333,
+  "sample": 15,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": 415
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": 335
+        }
+      ]
+    },
+    "comps": {
+      "cc.Widget": {}
+    }
+  },
+  "events": [
+    {
+      "frame": 0.3333333333333333,
+      "func": "",
+      "params": []
+    }
+  ]
+}

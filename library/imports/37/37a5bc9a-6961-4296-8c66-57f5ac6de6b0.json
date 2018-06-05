@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Editor_Icon_Hinge",
+    "texture": "8a02952d-7bfb-4ee5-bc11-6c54dc6e15d1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      28,
+      48
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      28,
+      48
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Skinpop_BG",
+    "texture": "9462d690-d878-4fa9-b5c1-610ee158715c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      288,
+      209
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      288,
+      209
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_r_blue",
+    "texture": "216c8ed1-f730-49cf-be7e-8c7fd14f1306",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      340,
+      142
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      340,
+      142
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_ads_quan",
+    "texture": "887bd0da-a604-4a67-9ae7-0529f2f4d301",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      133,
+      132
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      132
+    ]
+  }
+}

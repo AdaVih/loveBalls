@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_semicircle",
+    "texture": "d1939854-6e11-490f-8e9b-32dc4bc720bd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      370,
+      185
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      370,
+      185
+    ]
+  }
+}

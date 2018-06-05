@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_progressbar_bar",
+    "texture": "325877c1-1a75-42bd-9afe-5ba8abf9071c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      86,
+      88
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      86,
+      88
+    ]
+  }
+}

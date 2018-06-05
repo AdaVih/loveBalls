@@ -26,12 +26,12 @@
     "orientation": "portrait"
   },
   "renderMode": "0",
-  "startScene": "446e85c9-eec4-4f05-84ed-71936ad3ec9f",
+  "startScene": "f5cc6a55-87f0-4478-8a79-81ca0fcadbf5",
   "title": "loveballs",
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
-    "appid": "wxd6ad5776a475cd91",
+    "appid": "wx76ce7ee5a5088c50",
     "isSubdomain": false,
     "orientation": "landscape",
     "subContext": ""

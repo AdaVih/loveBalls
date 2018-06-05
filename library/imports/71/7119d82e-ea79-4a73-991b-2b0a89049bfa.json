@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Spark_d",
+    "texture": "e1d843cd-dbf1-406a-9e4a-d5912e424f05",
+    "atlas": "",
+    "rect": [
+      0,
+      8,
+      64,
+      49
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      64,
+      64
+    ]
+  }
+}

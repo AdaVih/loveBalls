@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_MoveQuadDrag",
+    "texture": "621456bc-4c37-4cce-8b76-59558e18c62d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      86,
+      88
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      86,
+      88
+    ]
+  }
+}

@@ -33,14 +33,18 @@
   ],
   "design-resolution-height": 640,
   "design-resolution-width": 960,
-  "excluded-modules": [],
+  "excluded-modules": [
+    "TiledMap",
+    "DragonBones",
+    "Camera"
+  ],
   "fit-height": true,
   "fit-width": false,
   "group-list": [
     "default",
-    "gameObj",
-    "floor",
-    "line"
+    "lb_ysc_gameObj",
+    "lb_ysc_floor",
+    "lb_ysc_line"
   ],
   "simulator-orientation": false,
   "simulator-resolution": {
@@ -48,6 +52,5 @@
     "width": 960
   },
   "use-customize-simulator": false,
-  "use-project-simulator-setting": false,
-  "start-scene": "current"
+  "use-project-simulator-setting": false
 }

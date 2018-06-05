@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Starfall_1_d",
+    "texture": "26d3dce1-9d4a-4e54-948f-fe9895024238",
+    "atlas": "",
+    "rect": [
+      12,
+      18,
+      34,
+      36
+    ],
+    "offset": [
+      -3,
+      -4
+    ],
+    "originalSize": [
+      64,
+      64
+    ]
+  }
+}

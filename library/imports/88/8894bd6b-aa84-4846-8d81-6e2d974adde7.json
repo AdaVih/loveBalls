@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_man_01_3_1",
+    "texture": "f9d20633-3365-47f2-909a-daeb1edc7c47",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      250,
+      210
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      251,
+      210
+    ]
+  }
+}

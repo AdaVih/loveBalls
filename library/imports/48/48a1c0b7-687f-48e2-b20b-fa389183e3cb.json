@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Btn_skin",
+    "texture": "9f1bde72-8143-49a7-bed0-2ca62972e69e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      101,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      101,
+      53
+    ]
+  }
+}

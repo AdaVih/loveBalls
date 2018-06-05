@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Hint_fail",
+    "texture": "e4ceffa3-c706-4343-a0b1-6dad599efc26",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      59,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      59,
+      54
+    ]
+  }
+}

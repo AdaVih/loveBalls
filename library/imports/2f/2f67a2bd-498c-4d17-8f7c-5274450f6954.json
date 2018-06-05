@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_xmxx_yjr_back_mainPage",
+    "texture": "8f988957-e926-47a8-8ab1-7fb952a6176a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      108,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      108,
+      53
+    ]
+  }
+}

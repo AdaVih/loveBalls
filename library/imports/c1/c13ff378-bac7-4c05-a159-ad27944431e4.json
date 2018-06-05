@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Hint_finger",
+    "texture": "b3528ddb-4965-44a4-bd7d-09794eb34447",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      399,
+      14
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      399,
+      14
+    ]
+  }
+}

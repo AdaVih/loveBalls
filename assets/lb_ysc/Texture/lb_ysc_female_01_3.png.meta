@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "8a1eaa38-2d97-458e-8f80-07b7092a2262",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "lb_ysc_female_01_3": {
+      "ver": "1.0.3",
+      "uuid": "d157b869-1b43-4741-a150-a4058f2a07fa",
+      "rawTextureUuid": "8a1eaa38-2d97-458e-8f80-07b7092a2262",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 251,
+      "height": 209,
+      "rawWidth": 251,
+      "rawHeight": 210,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

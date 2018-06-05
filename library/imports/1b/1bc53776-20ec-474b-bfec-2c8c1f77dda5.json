@@ -1,0 +1,185 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "lb_ysc_star",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "j5gt0xIVmpy9ztQYxmEfH/IkGZE",
+      "spine": "3.6.52",
+      "width": 195,
+      "height": 186,
+      "images": "./png/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "start",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "start",
+        "bone": "start",
+        "attachment": "start"
+      }
+    ],
+    "skins": {
+      "default": {
+        "start": {
+          "start": {
+            "width": 195,
+            "height": 186
+          }
+        }
+      }
+    },
+    "animations": {
+      "aniStart": {
+        "slots": {
+          "start": {
+            "color": [
+              {
+                "time": 0,
+                "color": "d6d6d6ff"
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffffff"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.0333,
+                "name": "start"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "start": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.0333,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.0667,
+                "angle": 90,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1,
+                "angle": 180,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1333,
+                "angle": -90,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 25,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.0333,
+                "x": 0,
+                "y": 25,
+                "curve": [
+                  0.581,
+                  0.24,
+                  0.932,
+                  0.59
+                ]
+              },
+              {
+                "time": 0.1667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 3,
+                "y": 3,
+                "curve": [
+                  0.25,
+                  0,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.1667,
+                "x": 0.95,
+                "y": 0.95,
+                "curve": [
+                  0.25,
+                  0,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.2333,
+                "x": 1.02,
+                "y": 1.02,
+                "curve": [
+                  0.25,
+                  0,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.3,
+                "x": 0.99,
+                "y": 0.99
+              },
+              {
+                "time": 0.3667,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\r\nlb_ysc_star.png\r\nsize: 256,256\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstart\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 195, 186\r\n  orig: 195, 186\r\n  offset: 0, 0\r\n  index: -1\r\n",
+  "atlasUrl": {
+    "__uuid__": "abba24e8-5e2e-40d4-9390-23f25d68c4bc"
+  },
+  "textures": [
+    {
+      "__uuid__": "a0ed4528-b56f-445d-ba28-1fa4d0903ed8"
+    }
+  ],
+  "scale": 1
+}

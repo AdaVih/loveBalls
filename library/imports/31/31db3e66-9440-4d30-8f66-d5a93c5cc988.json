@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_level5",
+    "texture": "3424711e-e2a9-473c-ada4-4bb6a85e48e4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      560,
+      296
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      560,
+      296
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_Home_Skin",
+    "texture": "42de7e75-327d-45c4-bcb1-dc9f26fb4576",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      40,
+      65
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      40,
+      65
+    ]
+  }
+}

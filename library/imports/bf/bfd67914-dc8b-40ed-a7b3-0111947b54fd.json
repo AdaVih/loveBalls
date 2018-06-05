@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lb_ysc_female_01_2",
+    "texture": "f99fed66-e6b7-4be4-8ad5-084808936502",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      251,
+      209
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      251,
+      210
+    ]
+  }
+}
